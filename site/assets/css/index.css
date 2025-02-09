@@ -27,7 +27,7 @@ body{
 nav{
     display: flex;
     border-bottom: solid var(--tertiary-color) 7px;
-    height: 12vh;
+    min-height: 12vh;
 }
 
 nav a{
@@ -193,61 +193,80 @@ nav ul a li:hover{
 ###############*/
  
 .exp-title{
-    height: 20vh;
+    min-height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .exp-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5%;
-  width: 80%;
-  padding-left: 10%;
-  box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 1%; 
+    box-sizing: border-box; 
 }
 
 .experience {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 2/3;
-  background-color: #d3d3d3;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.experience img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    background-color: #d3d3d3;
+    width: 30%;
+    aspect-ratio: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .experience:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #bbb; 
+}
+
+.experience img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 1rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.description h2 {
+    color: var(--tertiary-color);
+}
+
+.description p {
+    color: var(--tertiary-color);
 }
 
 .experience:hover .description {
-  opacity: 1;
+    opacity: 1; 
 }
+
 
 /*###############
 #### CONTACT ####
