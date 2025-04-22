@@ -272,6 +272,23 @@ nav ul a li:hover{
     padding: 10px 30px;
     font-size: 16px;
     font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.buttonW {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
     color: var(--tertiary-color);
     text-decoration: none;
     border: 2px solid var(--tertiary-color);
@@ -280,7 +297,7 @@ nav ul a li:hover{
     transition: all 0.3s ease;
 }
 
-.button:hover {
+.buttonW:hover {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
 }
@@ -399,6 +416,7 @@ nav ul a li:hover{
 }
 
 
+
 /*###############
 #### CONTACT ####
 ###############*/
@@ -476,3 +494,165 @@ nav ul a li:hover{
         margin: 25px;
     }
 }
+
+
+
+/*###############
+## EXPERIENCES ##
+###############*/
+
+.section-exp {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 1%; 
+}
+
+.section-exp h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges span {
+    display: inline-block;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    padding: 6px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+.badges div h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshots img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+.page-project {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+  
+.project-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+  
+.project-main {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+}
+  
+.project-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.palerte{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .page-project {
+      height: auto;
+      overflow: auto;
+    }
+  
+    .project-main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel {
+      order: 1;
+    }
+  
+    .badges {
+      order: 2;
+      margin-top: 30px;
+      text-align: center;
+    }
+  
+    .project-title {
+      font-size: 1.8em;
+    }
+  
+    .carousel img {
+      height: auto;
+    }
+}
+  
+
+
+/* carousel */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+  
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-item {
+    min-width: 100%;
+    border-radius: 10px;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+  
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+  
+.prev { left: 10px; }
+.next { right: 10px; }
+  
+
+
+/* carousel fin */
