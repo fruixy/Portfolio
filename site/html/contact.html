@@ -21,7 +21,7 @@
 <body>
     <nav>
         <a id="logo-link">
-            <img id="logo" src="../assets/img/logoseul.png" alt="Logo">
+          <img id="logo" src="../assets/img/logoseul.png" alt="Logo">
         </a>
         <div class="div-burger">
             <button id="burger-menu">
@@ -33,7 +33,8 @@
         <ul id="nav-menu">
             <a href="../index.html"><li>Accueil</li></a>
             <a href="./portfolio.html"><li>Portfolio</li></a>
-            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./apropos.html"><li>À propos de moi</li></a>
+            <a href="./contact.html"><li>CV et contact</li></a>
         </ul>
     </nav>
     
@@ -62,22 +63,26 @@
                     <img src="../assets/img/tel.png" alt="">
                 </a>
             </div>
-            <form id="contact-form" novalidate>
-                <h2>Formulaire de Contact</h2>
+            <form id="contact-form" class="styled-form" method="POST" action="../php/sendmail.php">
+                <h3>Formulaire de Contact</h3>
+            
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Votre nom" required minlength="3">
-                    <div class="error" id="name-error"></div>
                 </div>
+            
                 <div class="form-group">
                     <input type="email" id="email" name="email" placeholder="Votre email" required>
-                    <div class="error" id="email-error"></div>
                 </div>
+            
                 <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required minlength="10"></textarea>
-                    <div class="error" id="message-error"></div>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message" required minlength="10"></textarea>
                 </div>
-                <button type="submit">Envoyer</button>
+            
+                <div class="form-submit">
+                    <button type="submit">Envoyer</button>
+                </div>
             </form>
+            
         </div>
     </section>
     <script src="../assets/js/menu.js"></script>
