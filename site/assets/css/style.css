@@ -271,6 +271,11 @@ nav ul a li:hover{
     align-items: center;
 }
 
+.div-button a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .button {
     padding: 10px 30px;
     font-size: 16px;
@@ -636,11 +641,7 @@ nav ul a li:hover{
     display: inline-block;
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
-<<<<<<< HEAD
     box-shadow: 0 0 25px rgba(214, 151, 51, 0.7);
-=======
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
->>>>>>> 07aea04c4f529c69787569ef656bdec804239e6a
     padding: 6px 10px;
     margin: 5px 5px 0 0;
     border-radius: 6px;
@@ -660,10 +661,6 @@ nav ul a li:hover{
 
 
 .page-project {
-<<<<<<< HEAD
-=======
-    height: 80vh;
->>>>>>> 07aea04c4f529c69787569ef656bdec804239e6a
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -716,10 +713,7 @@ nav ul a li:hover{
       order: 2;
       margin-top: 30px;
       text-align: center;
-<<<<<<< HEAD
       margin-bottom: 30px;
-=======
->>>>>>> 07aea04c4f529c69787569ef656bdec804239e6a
     }
   
     .project-title {
@@ -779,7 +773,6 @@ nav ul a li:hover{
 
 
 /* carousel fin */
-<<<<<<< HEAD
 
 
 /*###############
@@ -1066,5 +1059,3 @@ nav ul a li:hover{
         margin: 0;
     }
 }
-=======
->>>>>>> 07aea04c4f529c69787569ef656bdec804239e6a
